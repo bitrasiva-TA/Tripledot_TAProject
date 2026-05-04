@@ -296,7 +296,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4960583885822062626}
   m_Layer: 5
-  m_Name: SettingsLine
+  m_Name: SettingsToggle_0n-Off
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

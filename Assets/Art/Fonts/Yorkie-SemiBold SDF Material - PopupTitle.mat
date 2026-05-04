@@ -7,7 +7,7 @@ Material:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: Lato-Black Atlas Material - MenuBar
+  m_Name: Yorkie-SemiBold SDF Material - PopupTitle
   m_Shader: {fileID: 4800000, guid: 68e6db2ebdc24f95958faec2be5558d6, type: 3}
   m_Parent: {fileID: 0}
   m_ModifiedSerializedProperties: 0
@@ -37,7 +37,7 @@ Material:
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _MainTex:
-        m_Texture: {fileID: -5325994278366679297, guid: 3ae5f98f8c7053747a484fa5254051a3, type: 2}
+        m_Texture: {fileID: 7602036060576856338, guid: 0f918692c9182434ca5da8a59bb61b74, type: 2}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _OutlineTex:
@@ -76,7 +76,7 @@ Material:
     - _Reflectivity: 10
     - _ScaleRatioA: 0.9
     - _ScaleRatioB: 0.73125
-    - _ScaleRatioC: 0.5625
+    - _ScaleRatioC: 0.52232146
     - _ScaleX: 1
     - _ScaleY: 1
     - _ShaderFlags: 0
@@ -91,7 +91,7 @@ Material:
     - _TextureWidth: 1024
     - _UnderlayDilate: 1
     - _UnderlayOffsetX: 0
-    - _UnderlayOffsetY: -0.3
+    - _UnderlayOffsetY: -0.4
     - _UnderlaySoftness: 0
     - _VertexOffsetX: 0
     - _VertexOffsetY: 0
@@ -107,6 +107,6 @@ Material:
     - _ReflectFaceColor: {r: 0, g: 0, b: 0, a: 1}
     - _ReflectOutlineColor: {r: 0, g: 0, b: 0, a: 1}
     - _SpecularColor: {r: 1, g: 1, b: 1, a: 1}
-    - _UnderlayColor: {r: 0.043137256, g: 0.23137255, b: 0.46666667, a: 1}
+    - _UnderlayColor: {r: 0.023529412, g: 0.15294118, b: 0.30980393, a: 1}
   m_BuildTextureStacks: []
   m_AllowLocking: 1

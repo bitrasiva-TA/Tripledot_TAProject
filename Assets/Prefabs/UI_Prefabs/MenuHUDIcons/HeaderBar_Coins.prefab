@@ -110,6 +110,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 567251488120886201, guid: c5206159356b8df4b8589626c6d6cf26, type: 3}
+      propertyPath: m_text
+      value: 2546
+      objectReference: {fileID: 0}
     - target: {fileID: 1052637975391662928, guid: c5206159356b8df4b8589626c6d6cf26, type: 3}
       propertyPath: m_Name
       value: Text_Coin

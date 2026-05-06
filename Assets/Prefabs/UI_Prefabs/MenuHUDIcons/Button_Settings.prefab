@@ -88,13 +88,21 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 2141501374252002218, guid: c84ef122c44fc0049a48f50314788a3d, type: 3}
+      propertyPath: m_Name
+      value: Icon_Settings
+      objectReference: {fileID: 0}
+    - target: {fileID: 2915982550624546866, guid: c84ef122c44fc0049a48f50314788a3d, type: 3}
+      propertyPath: m_Name
+      value: ButtonBG
+      objectReference: {fileID: 0}
     - target: {fileID: 3752436042148164043, guid: c84ef122c44fc0049a48f50314788a3d, type: 3}
       propertyPath: m_Sprite
       value: 
       objectReference: {fileID: 21300000, guid: 190baff269d53634ea3b761106170347, type: 3}
     - target: {fileID: 4106790567281361150, guid: c84ef122c44fc0049a48f50314788a3d, type: 3}
       propertyPath: m_Name
-      value: GenericButton Variant
+      value: Button_Settings
       objectReference: {fileID: 0}
     - target: {fileID: 6494322844454801808, guid: c84ef122c44fc0049a48f50314788a3d, type: 3}
       propertyPath: m_Sprite

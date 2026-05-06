@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 5488841568919185013}
   - component: {fileID: 567251488120886201}
   m_Layer: 5
-  m_Name: ValueText
+  m_Name: Text
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -103,6 +103,7 @@ MonoBehaviour:
   m_VerticalAlignment: 512
   m_textAlignment: 65535
   m_characterSpacing: 0
+  m_characterHorizontalScale: 1
   m_wordSpacing: 0
   m_lineSpacing: 0
   m_lineSpacingMax: 0
@@ -259,7 +260,7 @@ GameObject:
   - component: {fileID: 1562611395899394368}
   - component: {fileID: 6920380542271806632}
   m_Layer: 5
-  m_Name: Container
+  m_Name: PanelBG
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

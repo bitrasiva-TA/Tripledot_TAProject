@@ -1,6 +1,6 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
---- !u!1001 &864375784660679446
+--- !u!1001 &2570781828611804761
 PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
@@ -90,17 +90,17 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 9102800977377629644, guid: d179eddb46555ba46a47688bb0a1bc38, type: 3}
       propertyPath: m_Name
-      value: BuyMoreButton
+      value: Button_BuyMore
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: d179eddb46555ba46a47688bb0a1bc38, type: 3}
---- !u!224 &6783969459586926969 stripped
+--- !u!224 &8536046454883400758 stripped
 RectTransform:
   m_CorrespondingSourceObject: {fileID: 6186645670424818287, guid: d179eddb46555ba46a47688bb0a1bc38, type: 3}
-  m_PrefabInstance: {fileID: 864375784660679446}
+  m_PrefabInstance: {fileID: 2570781828611804761}
   m_PrefabAsset: {fileID: 0}
 --- !u!1001 &7037665776406887758
 PrefabInstance:
@@ -110,13 +110,21 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 1052637975391662928, guid: c5206159356b8df4b8589626c6d6cf26, type: 3}
+      propertyPath: m_Name
+      value: Text_Coin
+      objectReference: {fileID: 0}
+    - target: {fileID: 1581520205926760008, guid: c5206159356b8df4b8589626c6d6cf26, type: 3}
+      propertyPath: m_Name
+      value: Icon_Coins
+      objectReference: {fileID: 0}
     - target: {fileID: 1661397143089472880, guid: c5206159356b8df4b8589626c6d6cf26, type: 3}
       propertyPath: m_Sprite
       value: 
       objectReference: {fileID: 21300000, guid: ee080e15434f75f45a53a2e300e786d5, type: 3}
     - target: {fileID: 2213911353022472594, guid: c5206159356b8df4b8589626c6d6cf26, type: 3}
       propertyPath: m_Name
-      value: CurrencyBox_Coins
+      value: HeaderBar_Coins
       objectReference: {fileID: 0}
     - target: {fileID: 2873011621599808969, guid: c5206159356b8df4b8589626c6d6cf26, type: 3}
       propertyPath: m_Pivot.x
@@ -215,7 +223,7 @@ PrefabInstance:
     m_AddedGameObjects:
     - targetCorrespondingSourceObject: {fileID: 5651359567599139692, guid: c5206159356b8df4b8589626c6d6cf26, type: 3}
       insertIndex: -1
-      addedObject: {fileID: 6783969459586926969}
+      addedObject: {fileID: 8536046454883400758}
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c5206159356b8df4b8589626c6d6cf26, type: 3}
 --- !u!224 &3442832767206262306 stripped

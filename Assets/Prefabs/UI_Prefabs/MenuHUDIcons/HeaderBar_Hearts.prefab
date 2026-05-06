@@ -8,13 +8,21 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 1052637975391662928, guid: c5206159356b8df4b8589626c6d6cf26, type: 3}
+      propertyPath: m_Name
+      value: Text_Hearts
+      objectReference: {fileID: 0}
+    - target: {fileID: 1581520205926760008, guid: c5206159356b8df4b8589626c6d6cf26, type: 3}
+      propertyPath: m_Name
+      value: Icon_Hearts
+      objectReference: {fileID: 0}
     - target: {fileID: 1661397143089472880, guid: c5206159356b8df4b8589626c6d6cf26, type: 3}
       propertyPath: m_Sprite
       value: 
       objectReference: {fileID: 21300000, guid: 1264a2e52efc4574195597c855106cbb, type: 3}
     - target: {fileID: 2213911353022472594, guid: c5206159356b8df4b8589626c6d6cf26, type: 3}
       propertyPath: m_Name
-      value: CurrencyBox_Hearts
+      value: HeaderBar_Hearts
       objectReference: {fileID: 0}
     - target: {fileID: 2873011621599808969, guid: c5206159356b8df4b8589626c6d6cf26, type: 3}
       propertyPath: m_Pivot.x

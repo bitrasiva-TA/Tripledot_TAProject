@@ -10,7 +10,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 259760877011743574, guid: 473f2094f421e394aa54eaf9f2147e92, type: 3}
       propertyPath: m_Name
-      value: FooterButton_Shop Variant
+      value: Button_Shop
       objectReference: {fileID: 0}
     - target: {fileID: 520565577050239058, guid: 473f2094f421e394aa54eaf9f2147e92, type: 3}
       propertyPath: m_text
@@ -20,6 +20,10 @@ PrefabInstance:
       propertyPath: m_Sprite
       value: 
       objectReference: {fileID: 21300000, guid: 7304766a9c3132f469ec67f229469e48, type: 3}
+    - target: {fileID: 3465132425315480288, guid: 473f2094f421e394aa54eaf9f2147e92, type: 3}
+      propertyPath: m_Alpha
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 5244083550947242576, guid: 473f2094f421e394aa54eaf9f2147e92, type: 3}
       propertyPath: m_Pivot.x
       value: 0.5

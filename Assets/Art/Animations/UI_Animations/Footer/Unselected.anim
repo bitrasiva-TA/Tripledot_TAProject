@@ -31,7 +31,7 @@ AnimationClip:
       m_PreInfinity: 2
       m_PostInfinity: 2
       m_RotationOrder: 4
-    path: Content/Icon
+    path: Icon
   m_FloatCurves:
   - serializedVersion: 2
     curve:
@@ -49,8 +49,8 @@ AnimationClip:
       m_PreInfinity: 2
       m_PostInfinity: 2
       m_RotationOrder: 4
-    attribute: m_AnchoredPosition.y
-    path: Content/Icon
+    attribute: m_AnchoredPosition.x
+    path: Icon
     classID: 224
     script: {fileID: 0}
     flags: 0
@@ -70,8 +70,8 @@ AnimationClip:
       m_PreInfinity: 2
       m_PostInfinity: 2
       m_RotationOrder: 4
-    attribute: m_AnchoredPosition.x
-    path: Content/Icon
+    attribute: m_AnchoredPosition.y
+    path: Icon
     classID: 224
     script: {fileID: 0}
     flags: 0
@@ -92,7 +92,7 @@ AnimationClip:
       m_PostInfinity: 2
       m_RotationOrder: 4
     attribute: m_IsActive
-    path: Content/Padlock
+    path: Padlock
     classID: 1
     script: {fileID: 0}
     flags: 0
@@ -113,7 +113,7 @@ AnimationClip:
       m_PostInfinity: 2
       m_RotationOrder: 4
     attribute: m_IsActive
-    path: Content/TitleContent
+    path: TitleLabel
     classID: 1
     script: {fileID: 0}
     flags: 0
@@ -126,7 +126,7 @@ AnimationClip:
   m_ClipBindingConstant:
     genericBindings:
     - serializedVersion: 2
-      path: 1291127060
+      path: 3077078953
       attribute: 2086281974
       script: {fileID: 0}
       typeID: 1
@@ -135,7 +135,7 @@ AnimationClip:
       isIntCurve: 0
       isSerializeReferenceCurve: 0
     - serializedVersion: 2
-      path: 3126526039
+      path: 2529482328
       attribute: 2086281974
       script: {fileID: 0}
       typeID: 1
@@ -144,7 +144,7 @@ AnimationClip:
       isIntCurve: 0
       isSerializeReferenceCurve: 0
     - serializedVersion: 2
-      path: 3911667735
+      path: 3316025061
       attribute: 3
       script: {fileID: 0}
       typeID: 4
@@ -153,8 +153,8 @@ AnimationClip:
       isIntCurve: 0
       isSerializeReferenceCurve: 0
     - serializedVersion: 2
-      path: 3911667735
-      attribute: 538195251
+      path: 3316025061
+      attribute: 1460864421
       script: {fileID: 0}
       typeID: 224
       customType: 28
@@ -162,8 +162,8 @@ AnimationClip:
       isIntCurve: 0
       isSerializeReferenceCurve: 0
     - serializedVersion: 2
-      path: 3911667735
-      attribute: 1460864421
+      path: 3316025061
+      attribute: 538195251
       script: {fileID: 0}
       typeID: 224
       customType: 28
@@ -208,8 +208,8 @@ AnimationClip:
       m_PreInfinity: 2
       m_PostInfinity: 2
       m_RotationOrder: 4
-    attribute: m_AnchoredPosition.y
-    path: Content/Icon
+    attribute: m_AnchoredPosition.x
+    path: Icon
     classID: 224
     script: {fileID: 0}
     flags: 0
@@ -229,8 +229,8 @@ AnimationClip:
       m_PreInfinity: 2
       m_PostInfinity: 2
       m_RotationOrder: 4
-    attribute: m_AnchoredPosition.x
-    path: Content/Icon
+    attribute: m_AnchoredPosition.y
+    path: Icon
     classID: 224
     script: {fileID: 0}
     flags: 0
@@ -251,7 +251,7 @@ AnimationClip:
       m_PostInfinity: 2
       m_RotationOrder: 4
     attribute: m_LocalScale.x
-    path: Content/Icon
+    path: Icon
     classID: 224
     script: {fileID: 0}
     flags: 0
@@ -272,7 +272,7 @@ AnimationClip:
       m_PostInfinity: 2
       m_RotationOrder: 4
     attribute: m_LocalScale.y
-    path: Content/Icon
+    path: Icon
     classID: 224
     script: {fileID: 0}
     flags: 0
@@ -293,7 +293,7 @@ AnimationClip:
       m_PostInfinity: 2
       m_RotationOrder: 4
     attribute: m_LocalScale.z
-    path: Content/Icon
+    path: Icon
     classID: 224
     script: {fileID: 0}
     flags: 0
@@ -314,7 +314,7 @@ AnimationClip:
       m_PostInfinity: 2
       m_RotationOrder: 4
     attribute: m_IsActive
-    path: Content/Padlock
+    path: Padlock
     classID: 1
     script: {fileID: 0}
     flags: 0
@@ -335,7 +335,7 @@ AnimationClip:
       m_PostInfinity: 2
       m_RotationOrder: 4
     attribute: m_IsActive
-    path: Content/TitleContent
+    path: TitleLabel
     classID: 1
     script: {fileID: 0}
     flags: 0

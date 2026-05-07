@@ -98,11 +98,11 @@ PrefabInstance:
       objectReference: {fileID: 21300000, guid: 16423b21b687e5e4cb6a7d38f7df105c, type: 3}
     - target: {fileID: 3752436042148164043, guid: c7f5685462de3864fb7eb1ddd49e5dc9, type: 3}
       propertyPath: m_PixelsPerUnitMultiplier
-      value: 2.5
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 4106790567281361150, guid: c7f5685462de3864fb7eb1ddd49e5dc9, type: 3}
       propertyPath: m_Name
-      value: BlueButton
+      value: Button_LightBlue
       objectReference: {fileID: 0}
     - target: {fileID: 5681167650056974708, guid: c7f5685462de3864fb7eb1ddd49e5dc9, type: 3}
       propertyPath: m_fontSize

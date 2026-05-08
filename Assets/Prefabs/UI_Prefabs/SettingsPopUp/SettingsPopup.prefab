@@ -605,14 +605,6 @@ PrefabInstance:
       propertyPath: m_IsActive
       value: 1
       objectReference: {fileID: 0}
-    - target: {fileID: 7945802790015969150, guid: 3b2091fe77679764aa106b96d8bd615e, type: 3}
-      propertyPath: m_SizeDelta.y
-      value: -25.000015
-      objectReference: {fileID: 0}
-    - target: {fileID: 7945802790015969150, guid: 3b2091fe77679764aa106b96d8bd615e, type: 3}
-      propertyPath: m_AnchoredPosition.y
-      value: 12.499992
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -949,22 +941,6 @@ RectTransform:
   m_CorrespondingSourceObject: {fileID: 4623652698271071621, guid: 8694e7bb21d5c774dbc4b5554f349cd1, type: 3}
   m_PrefabInstance: {fileID: 5512750334818493954}
   m_PrefabAsset: {fileID: 0}
---- !u!224 &4049780862874210090 stripped
-RectTransform:
-  m_CorrespondingSourceObject: {fileID: 8408940702528923944, guid: 8694e7bb21d5c774dbc4b5554f349cd1, type: 3}
-  m_PrefabInstance: {fileID: 5512750334818493954}
-  m_PrefabAsset: {fileID: 0}
---- !u!114 &4112882721065907563 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 8472075964761510761, guid: 8694e7bb21d5c774dbc4b5554f349cd1, type: 3}
-  m_PrefabInstance: {fileID: 5512750334818493954}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: UnityEngine.UI::UnityEngine.UI.Image
 --- !u!1001 &5823364134119701884
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -973,10 +949,6 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 324553442385713690, guid: dc6d0589d74031d4a987127d625e61d7, type: 3}
-      propertyPath: m_AnchoredPosition.y
-      value: 24.299988
-      objectReference: {fileID: 0}
     - target: {fileID: 505527572657640324, guid: dc6d0589d74031d4a987127d625e61d7, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.size
       value: 1
@@ -1139,13 +1111,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   animator: {fileID: 274906172934742300}
-  switchButton: {fileID: 4049780862874210090}
-  switchBackground: {fileID: 4112882721065907563}
-  onColor: {r: 0, g: 1, b: 0, a: 1}
-  offColor: {r: 1, g: 0, b: 0, a: 1}
-  switchSpeed: 0
-  onPosition: {x: 0, y: 0}
-  offPosition: {x: 0, y: 0}
 --- !u!224 &3193247172720222723 stripped
 RectTransform:
   m_CorrespondingSourceObject: {fileID: 8971187710638563199, guid: dc6d0589d74031d4a987127d625e61d7, type: 3}

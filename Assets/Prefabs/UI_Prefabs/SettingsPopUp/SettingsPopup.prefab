@@ -403,6 +403,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1054499243272384877}
     m_Modifications:
+    - target: {fileID: 5887568548865990527, guid: 13ea236ef4c445c4aaf719d2d02017e0, type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 6160359090776832498, guid: 13ea236ef4c445c4aaf719d2d02017e0, type: 3}
       propertyPath: m_Name
       value: Settings_ToggleControl_Notification
@@ -707,6 +711,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 8252153974336900366, guid: e9433cff0674b6741a20eff2eb75ac20, type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 8524381449298602883, guid: e9433cff0674b6741a20eff2eb75ac20, type: 3}
       propertyPath: m_Name
       value: Settings_ToggleControl_Language
@@ -911,9 +919,25 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 5122055541000248576, guid: 8694e7bb21d5c774dbc4b5554f349cd1, type: 3}
+      propertyPath: m_OnValueChanged.m_PersistentCalls.m_Calls.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5122055541000248576, guid: 8694e7bb21d5c774dbc4b5554f349cd1, type: 3}
+      propertyPath: m_OnValueChanged.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5122055541000248576, guid: 8694e7bb21d5c774dbc4b5554f349cd1, type: 3}
+      propertyPath: m_OnValueChanged.m_PersistentCalls.m_Calls.Array.data[0].m_CallState
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 8105259518843015077, guid: 8694e7bb21d5c774dbc4b5554f349cd1, type: 3}
       propertyPath: m_Name
       value: Settings_ToggleControl_Sound
+      objectReference: {fileID: 0}
+    - target: {fileID: 8408940702528923944, guid: 8694e7bb21d5c774dbc4b5554f349cd1, type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -925,6 +949,22 @@ RectTransform:
   m_CorrespondingSourceObject: {fileID: 4623652698271071621, guid: 8694e7bb21d5c774dbc4b5554f349cd1, type: 3}
   m_PrefabInstance: {fileID: 5512750334818493954}
   m_PrefabAsset: {fileID: 0}
+--- !u!224 &4049780862874210090 stripped
+RectTransform:
+  m_CorrespondingSourceObject: {fileID: 8408940702528923944, guid: 8694e7bb21d5c774dbc4b5554f349cd1, type: 3}
+  m_PrefabInstance: {fileID: 5512750334818493954}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &4112882721065907563 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 8472075964761510761, guid: 8694e7bb21d5c774dbc4b5554f349cd1, type: 3}
+  m_PrefabInstance: {fileID: 5512750334818493954}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: UnityEngine.UI::UnityEngine.UI.Image
 --- !u!1001 &5823364134119701884
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1099,6 +1139,13 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   animator: {fileID: 274906172934742300}
+  switchButton: {fileID: 4049780862874210090}
+  switchBackground: {fileID: 4112882721065907563}
+  onColor: {r: 0, g: 1, b: 0, a: 1}
+  offColor: {r: 1, g: 0, b: 0, a: 1}
+  switchSpeed: 0
+  onPosition: {x: 0, y: 0}
+  offPosition: {x: 0, y: 0}
 --- !u!224 &3193247172720222723 stripped
 RectTransform:
   m_CorrespondingSourceObject: {fileID: 8971187710638563199, guid: dc6d0589d74031d4a987127d625e61d7, type: 3}
@@ -1421,6 +1468,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 2480971813035980962, guid: 9f58b65cfba7bb14c89521c95db8a033, type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 2785207173506309679, guid: 9f58b65cfba7bb14c89521c95db8a033, type: 3}
       propertyPath: m_Name
       value: Settings_ToggleControl_Music
@@ -1446,6 +1497,10 @@ PrefabInstance:
     - target: {fileID: 4846375801456672743, guid: be91ddc4e6e04954aa69ac23c2e32050, type: 3}
       propertyPath: m_Name
       value: Settings_ToggleControl_Vibration
+      objectReference: {fileID: 0}
+    - target: {fileID: 5154629875850353002, guid: be91ddc4e6e04954aa69ac23c2e32050, type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8291373385923644871, guid: be91ddc4e6e04954aa69ac23c2e32050, type: 3}
       propertyPath: m_Pivot.x

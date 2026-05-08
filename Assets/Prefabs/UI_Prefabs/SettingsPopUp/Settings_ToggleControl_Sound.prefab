@@ -8,10 +8,18 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 1173545462187795306, guid: 999a922ece1f67647899098b7d0c2b38, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 352
+      objectReference: {fileID: 0}
     - target: {fileID: 3849935927601961410, guid: 999a922ece1f67647899098b7d0c2b38, type: 3}
       propertyPath: m_Sprite
       value: 
       objectReference: {fileID: 21300000, guid: 35a30e55b8e5f65428ff08867da2f3a8, type: 3}
+    - target: {fileID: 4893223679060496551, guid: 999a922ece1f67647899098b7d0c2b38, type: 3}
+      propertyPath: m_MaxValue
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 4960583885822062626, guid: 999a922ece1f67647899098b7d0c2b38, type: 3}
       propertyPath: m_Pivot.x
       value: 0.5
@@ -92,9 +100,25 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 8092832633228436623, guid: 999a922ece1f67647899098b7d0c2b38, type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8092832633228436623, guid: 999a922ece1f67647899098b7d0c2b38, type: 3}
+      propertyPath: m_SizeDelta.y
+      value: 72
+      objectReference: {fileID: 0}
+    - target: {fileID: 8092832633228436623, guid: 999a922ece1f67647899098b7d0c2b38, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 12
+      objectReference: {fileID: 0}
+    - target: {fileID: 8092832633228436623, guid: 999a922ece1f67647899098b7d0c2b38, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 8396576624844702210, guid: 999a922ece1f67647899098b7d0c2b38, type: 3}
       propertyPath: m_Name
-      value: SettingsLine_Sound Variant
+      value: Settings_ToggleControl_Sound
       objectReference: {fileID: 0}
     - target: {fileID: 8467260160406562873, guid: 999a922ece1f67647899098b7d0c2b38, type: 3}
       propertyPath: m_text

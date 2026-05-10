@@ -106,6 +106,7 @@ MonoBehaviour:
   m_VerticalAlignment: 1024
   m_textAlignment: 65535
   m_characterSpacing: 0
+  m_characterHorizontalScale: 1
   m_wordSpacing: 0
   m_lineSpacing: 0
   m_lineSpacingMax: 0
@@ -151,6 +152,3 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 80f15e5099fd9164bbcaca9acf01e999, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  amplitude: 10
-  frequency: 7
-  waveOffset: 0.3

@@ -881,14 +881,6 @@ PrefabInstance:
       propertyPath: m_Name
       value: StarsCounter
       objectReference: {fileID: 0}
-    - target: {fileID: 1742205129229429169, guid: e91a47979e4fa410d8c9166a5e3fd410, type: 3}
-      propertyPath: m_Layer
-      value: 5
-      objectReference: {fileID: 0}
-    - target: {fileID: 1742205129229429169, guid: e91a47979e4fa410d8c9166a5e3fd410, type: 3}
-      propertyPath: m_IsActive
-      value: 1
-      objectReference: {fileID: 0}
     - target: {fileID: 2331088490732614940, guid: e91a47979e4fa410d8c9166a5e3fd410, type: 3}
       propertyPath: m_Layer
       value: 5
@@ -900,10 +892,6 @@ PrefabInstance:
     - target: {fileID: 2549174000095628798, guid: e91a47979e4fa410d8c9166a5e3fd410, type: 3}
       propertyPath: m_Layer
       value: 5
-      objectReference: {fileID: 0}
-    - target: {fileID: 2549174000095628798, guid: e91a47979e4fa410d8c9166a5e3fd410, type: 3}
-      propertyPath: m_IsActive
-      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 2549174000095649342, guid: e91a47979e4fa410d8c9166a5e3fd410, type: 3}
       propertyPath: m_Layer
@@ -964,10 +952,6 @@ PrefabInstance:
     - target: {fileID: 6589934019098906005, guid: e91a47979e4fa410d8c9166a5e3fd410, type: 3}
       propertyPath: m_enableKerning
       value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 6589934019098906005, guid: e91a47979e4fa410d8c9166a5e3fd410, type: 3}
-      propertyPath: m_fontColor32.rgba
-      value: 4294967295
       objectReference: {fileID: 0}
     - target: {fileID: 6589934019098906005, guid: e91a47979e4fa410d8c9166a5e3fd410, type: 3}
       propertyPath: m_paragraphSpacing
@@ -1093,14 +1077,6 @@ PrefabInstance:
       propertyPath: m_Layer
       value: 5
       objectReference: {fileID: 0}
-    - target: {fileID: 8649436860967509347, guid: e91a47979e4fa410d8c9166a5e3fd410, type: 3}
-      propertyPath: m_Layer
-      value: 5
-      objectReference: {fileID: 0}
-    - target: {fileID: 8649436860967509347, guid: e91a47979e4fa410d8c9166a5e3fd410, type: 3}
-      propertyPath: m_IsActive
-      value: 0
-      objectReference: {fileID: 0}
     - target: {fileID: 9052806114613226364, guid: e91a47979e4fa410d8c9166a5e3fd410, type: 3}
       propertyPath: m_SortingLayer
       value: 0
@@ -1117,10 +1093,6 @@ PrefabInstance:
       propertyPath: m_Layer
       value: 5
       objectReference: {fileID: 0}
-    - target: {fileID: 9052806114633274140, guid: e91a47979e4fa410d8c9166a5e3fd410, type: 3}
-      propertyPath: m_Layer
-      value: 5
-      objectReference: {fileID: 0}
     - target: {fileID: 9052806114633276884, guid: e91a47979e4fa410d8c9166a5e3fd410, type: 3}
       propertyPath: m_Layer
       value: 5
@@ -1132,41 +1104,13 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents:
-    - targetCorrespondingSourceObject: {fileID: 1742205129229429169, guid: e91a47979e4fa410d8c9166a5e3fd410, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 8276636367796405685}
+    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e91a47979e4fa410d8c9166a5e3fd410, type: 3}
 --- !u!224 &3547256837556928965 stripped
 RectTransform:
   m_CorrespondingSourceObject: {fileID: 7253326723106375225, guid: e91a47979e4fa410d8c9166a5e3fd410, type: 3}
   m_PrefabInstance: {fileID: 6166163966250878972}
   m_PrefabAsset: {fileID: 0}
---- !u!1 &5602217492830744141 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 1742205129229429169, guid: e91a47979e4fa410d8c9166a5e3fd410, type: 3}
-  m_PrefabInstance: {fileID: 6166163966250878972}
-  m_PrefabAsset: {fileID: 0}
---- !u!114 &8276636367796405685
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5602217492830744141}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 306cc8c2b49d7114eaa3623786fc2126, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_IgnoreLayout: 0
-  m_MinWidth: -1
-  m_MinHeight: 660
-  m_PreferredWidth: -1
-  m_PreferredHeight: -1
-  m_FlexibleWidth: -1
-  m_FlexibleHeight: -1
-  m_LayoutPriority: 1
 --- !u!1001 &6952356190276057155
 PrefabInstance:
   m_ObjectHideFlags: 0

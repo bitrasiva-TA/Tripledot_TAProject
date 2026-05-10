@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 4113619750470382748}
   - component: {fileID: 4470946765031786038}
   - component: {fileID: 5877395538647355922}
-  m_Layer: 12
+  m_Layer: 5
   m_Name: starglowedge
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -111,13 +111,13 @@ GameObject:
   - component: {fileID: 564836548401457602}
   - component: {fileID: 564836548383083120}
   - component: {fileID: 564836548383126440}
-  m_Layer: 12
+  m_Layer: 5
   m_Name: StarRays
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &564836548401457602
 Transform:
   m_ObjectHideFlags: 0
@@ -4924,7 +4924,7 @@ GameObject:
   - component: {fileID: 4309158173852771709}
   - component: {fileID: 5680869180922107930}
   - component: {fileID: 7556075363262503146}
-  m_Layer: 12
+  m_Layer: 5
   m_Name: starIcon
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -5023,7 +5023,8 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 7253326723106375225}
-  m_Layer: 12
+  - component: {fileID: 2832229364587233865}
+  m_Layer: 5
   m_Name: StarsCounter
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -5037,7 +5038,7 @@ RectTransform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1742205129229429169}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
@@ -5051,6 +5052,101 @@ RectTransform:
   m_AnchoredPosition: {x: 0.50024414, y: 157.45071}
   m_SizeDelta: {x: 453.3192, y: 293.8885}
   m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &2832229364587233865
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1742205129229429169}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 306cc8c2b49d7114eaa3623786fc2126, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_IgnoreLayout: 0
+  m_MinWidth: -1
+  m_MinHeight: 660
+  m_PreferredWidth: -1
+  m_PreferredHeight: -1
+  m_FlexibleWidth: -1
+  m_FlexibleHeight: -1
+  m_LayoutPriority: 1
+--- !u!1 &2289381608159861942
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 955372421491830962}
+  - component: {fileID: 6947999417424210943}
+  - component: {fileID: 7728146365194008025}
+  m_Layer: 5
+  m_Name: StarRays
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &955372421491830962
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2289381608159861942}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 7819212416671786984}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 1}
+  m_AnchorMax: {x: 0.5, y: 1}
+  m_AnchoredPosition: {x: 10, y: -116}
+  m_SizeDelta: {x: 500, y: 500}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!222 &6947999417424210943
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2289381608159861942}
+  m_CullTransparentMesh: 1
+--- !u!114 &7728146365194008025
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2289381608159861942}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 2100000, guid: 340d7cec9a90fb2408fc27f4b8850c92, type: 2}
+  m_Color: {r: 1, g: 1, b: 1, a: 0.3529412}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_Sprite: {fileID: 0}
+  m_Type: 0
+  m_PreserveAspect: 1
+  m_FillCenter: 1
+  m_FillMethod: 4
+  m_FillAmount: 1
+  m_FillClockwise: 1
+  m_FillOrigin: 0
+  m_UseSpriteMesh: 0
+  m_PixelsPerUnitMultiplier: 1
 --- !u!1 &2331088490732614940
 GameObject:
   m_ObjectHideFlags: 0
@@ -5062,7 +5158,7 @@ GameObject:
   - component: {fileID: 6049219336315265329}
   - component: {fileID: 4634081451178769159}
   - component: {fileID: 5738204965710541999}
-  m_Layer: 12
+  m_Layer: 5
   m_Name: starglowsmall
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -5135,7 +5231,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 7819212416671786984}
-  m_Layer: 12
+  m_Layer: 5
   m_Name: StarRays
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -5155,6 +5251,7 @@ RectTransform:
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 2549174000095384204}
+  - {fileID: 955372421491830962}
   - {fileID: 564836548401457602}
   m_Father: {fileID: 3255746772135218124}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -5174,7 +5271,7 @@ GameObject:
   - component: {fileID: 6145597596301840819}
   - component: {fileID: 1963978482874547923}
   - component: {fileID: 6020268112755787640}
-  m_Layer: 12
+  m_Layer: 5
   m_Name: startwhiteglow
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -5249,7 +5346,7 @@ GameObject:
   - component: {fileID: 6049867454828052955}
   - component: {fileID: 8357358437569680548}
   - component: {fileID: 4281340936527714698}
-  m_Layer: 12
+  m_Layer: 5
   m_Name: starglow
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -5324,7 +5421,7 @@ GameObject:
   - component: {fileID: 7250257745220666472}
   - component: {fileID: 3708131055371911820}
   - component: {fileID: 6589934019098906005}
-  m_Layer: 12
+  m_Layer: 5
   m_Name: Text_Reward
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -5347,7 +5444,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 119, y: -344}
+  m_AnchoredPosition: {x: 8, y: -228}
   m_SizeDelta: {x: 235, y: 292}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &3708131055371911820
@@ -5372,7 +5469,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_RaycastTarget: 0
+  m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
   m_OnCullStateChanged:
@@ -5391,8 +5488,8 @@ MonoBehaviour:
     serializedVersion: 2
     rgba: 4294967295
   m_fontColor: {r: 1, g: 1, b: 1, a: 1}
-  m_enableVertexGradient: 0
-  m_colorMode: 3
+  m_enableVertexGradient: 1
+  m_colorMode: 0
   m_fontColorGradient:
     topLeft: {r: 1, g: 1, b: 1, a: 1}
     topRight: {r: 1, g: 1, b: 1, a: 1}
@@ -5407,12 +5504,12 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 135.1
-  m_fontSizeBase: 72
+  m_fontSize: 130
+  m_fontSizeBase: 137.1
   m_fontWeight: 400
   m_enableAutoSizing: 1
-  m_fontSizeMin: 10
-  m_fontSizeMax: 250
+  m_fontSizeMin: 18
+  m_fontSizeMax: 130
   m_fontStyle: 0
   m_HorizontalAlignment: 2
   m_VerticalAlignment: 512
@@ -5422,14 +5519,14 @@ MonoBehaviour:
   m_wordSpacing: 0
   m_lineSpacing: 0
   m_lineSpacingMax: 0
-  m_paragraphSpacing: 0
+  m_paragraphSpacing: -10
   m_charWidthMaxAdj: 0
   m_TextWrappingMode: 1
   m_wordWrappingRatios: 0.4
   m_overflowMode: 0
   m_linkedTextComponent: {fileID: 0}
   parentLinkedComponent: {fileID: 0}
-  m_enableKerning: 1
+  m_enableKerning: 0
   m_ActiveFontFeatures: 6e72656b
   m_enableExtraPadding: 0
   checkPaddingRequired: 0
@@ -5463,7 +5560,7 @@ GameObject:
   - component: {fileID: 4596513951389639278}
   - component: {fileID: 3061709950114387951}
   - component: {fileID: 3617920955615562826}
-  m_Layer: 12
+  m_Layer: 5
   m_Name: startwhite
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -5537,7 +5634,7 @@ GameObject:
   m_Component:
   - component: {fileID: 3255746772135218124}
   - component: {fileID: 3420396457949911654}
-  m_Layer: 12
+  m_Layer: 5
   m_Name: Icon
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -5588,7 +5685,7 @@ GameObject:
   - component: {fileID: 6706044503935497683}
   - component: {fileID: 3717803382271277404}
   - component: {fileID: 8504593609646586712}
-  m_Layer: 12
+  m_Layer: 5
   m_Name: starglowshine
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -5717,9 +5814,13 @@ PrefabInstance:
       propertyPath: m_Name
       value: StarRays_Vfx
       objectReference: {fileID: 0}
+    - target: {fileID: 3569730004499411073, guid: 93bfd201fb4db474087b9be6fb29b514, type: 3}
+      propertyPath: m_Layer
+      value: 5
+      objectReference: {fileID: 0}
     - target: {fileID: 3569730004499424065, guid: 93bfd201fb4db474087b9be6fb29b514, type: 3}
       propertyPath: m_Layer
-      value: 12
+      value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 3569730004513148077, guid: 93bfd201fb4db474087b9be6fb29b514, type: 3}
       propertyPath: m_SortingLayer
@@ -5743,7 +5844,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3570319844391325723, guid: 93bfd201fb4db474087b9be6fb29b514, type: 3}
       propertyPath: m_Layer
-      value: 13
+      value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 3695557486297442487, guid: 93bfd201fb4db474087b9be6fb29b514, type: 3}
       propertyPath: m_SortingLayer
@@ -5767,7 +5868,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4441740002019207430, guid: 93bfd201fb4db474087b9be6fb29b514, type: 3}
       propertyPath: m_Layer
-      value: 12
+      value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 8657458546049511659, guid: 93bfd201fb4db474087b9be6fb29b514, type: 3}
       propertyPath: m_SortingLayer
@@ -5779,7 +5880,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8991526537503248551, guid: 93bfd201fb4db474087b9be6fb29b514, type: 3}
       propertyPath: m_Layer
-      value: 12
+      value: 5
       objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 8231074290203068287, guid: 93bfd201fb4db474087b9be6fb29b514, type: 3}
@@ -5875,6 +5976,18 @@ PrefabInstance:
     - target: {fileID: 3225453889578158462, guid: 3165b69a1d7d04e9ca5a80d474833cd6, type: 3}
       propertyPath: m_Name
       value: Star_Trail_vfx
+      objectReference: {fileID: 0}
+    - target: {fileID: 3225453889578158462, guid: 3165b69a1d7d04e9ca5a80d474833cd6, type: 3}
+      propertyPath: m_Layer
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 3225453889578208130, guid: 3165b69a1d7d04e9ca5a80d474833cd6, type: 3}
+      propertyPath: m_Layer
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 3225453889578265460, guid: 3165b69a1d7d04e9ca5a80d474833cd6, type: 3}
+      propertyPath: m_Layer
+      value: 5
       objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 8784760182660640026, guid: 3165b69a1d7d04e9ca5a80d474833cd6, type: 3}

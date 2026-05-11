@@ -10,6 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1054499243272384877}
   - component: {fileID: 6521226284845791217}
+  - component: {fileID: 7095664670762609475}
   m_Layer: 5
   m_Name: OptionsLayout
   m_TagString: Untagged
@@ -71,6 +72,18 @@ MonoBehaviour:
   m_ChildScaleWidth: 1
   m_ChildScaleHeight: 1
   m_ReverseArrangement: 0
+--- !u!225 &7095664670762609475
+CanvasGroup:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2598206035404744374}
+  m_Enabled: 1
+  m_Alpha: 1
+  m_Interactable: 1
+  m_BlocksRaycasts: 1
+  m_IgnoreParentGroups: 0
 --- !u!1 &5636738382934431700
 GameObject:
   m_ObjectHideFlags: 0
@@ -491,16 +504,71 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 9005454509677987564, guid: 13ea236ef4c445c4aaf719d2d02017e0, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 9005454509677987564, guid: 13ea236ef4c445c4aaf719d2d02017e0, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 9005454509677987564, guid: 13ea236ef4c445c4aaf719d2d02017e0, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 749425064285173600}
+    - target: {fileID: 9005454509677987564, guid: 13ea236ef4c445c4aaf719d2d02017e0, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 9005454509677987564, guid: 13ea236ef4c445c4aaf719d2d02017e0, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: OnNotificationToggleClicked
+      objectReference: {fileID: 0}
+    - target: {fileID: 9005454509677987564, guid: 13ea236ef4c445c4aaf719d2d02017e0, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
+      value: SettingsPopupController, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 9005454509677987564, guid: 13ea236ef4c445c4aaf719d2d02017e0, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 13ea236ef4c445c4aaf719d2d02017e0, type: 3}
+--- !u!114 &6839490683822848899 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 5806418999794738494, guid: 13ea236ef4c445c4aaf719d2d02017e0, type: 3}
+  m_PrefabInstance: {fileID: 1044355568204160701}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: UnityEngine.UI::UnityEngine.UI.Image
+--- !u!224 &6902491822881882562 stripped
+RectTransform:
+  m_CorrespondingSourceObject: {fileID: 5887568548865990527, guid: 13ea236ef4c445c4aaf719d2d02017e0, type: 3}
+  m_PrefabInstance: {fileID: 1044355568204160701}
+  m_PrefabAsset: {fileID: 0}
 --- !u!224 &7733418436069397871 stripped
 RectTransform:
   m_CorrespondingSourceObject: {fileID: 7290435831785655250, guid: 13ea236ef4c445c4aaf719d2d02017e0, type: 3}
   m_PrefabInstance: {fileID: 1044355568204160701}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &7812952440940180970 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 7067103301942127447, guid: 13ea236ef4c445c4aaf719d2d02017e0, type: 3}
+  m_PrefabInstance: {fileID: 1044355568204160701}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 67db9e8f0e2ae9c40bc1e2b64352a6b4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: UnityEngine.UI::UnityEngine.UI.Slider
 --- !u!1001 &1428098419322597689
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -923,6 +991,34 @@ PrefabInstance:
       propertyPath: m_OnValueChanged.m_PersistentCalls.m_Calls.Array.data[0].m_CallState
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 6485071635822932155, guid: 8694e7bb21d5c774dbc4b5554f349cd1, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6485071635822932155, guid: 8694e7bb21d5c774dbc4b5554f349cd1, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6485071635822932155, guid: 8694e7bb21d5c774dbc4b5554f349cd1, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 749425064285173600}
+    - target: {fileID: 6485071635822932155, guid: 8694e7bb21d5c774dbc4b5554f349cd1, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 6485071635822932155, guid: 8694e7bb21d5c774dbc4b5554f349cd1, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: OnSoundToggleClicked
+      objectReference: {fileID: 0}
+    - target: {fileID: 6485071635822932155, guid: 8694e7bb21d5c774dbc4b5554f349cd1, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
+      value: SettingsPopupController, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 6485071635822932155, guid: 8694e7bb21d5c774dbc4b5554f349cd1, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
     - target: {fileID: 8105259518843015077, guid: 8694e7bb21d5c774dbc4b5554f349cd1, type: 3}
       propertyPath: m_Name
       value: Settings_ToggleControl_Sound
@@ -936,11 +1032,38 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 8694e7bb21d5c774dbc4b5554f349cd1, type: 3}
+--- !u!114 &834304306564938498 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 5122055541000248576, guid: 8694e7bb21d5c774dbc4b5554f349cd1, type: 3}
+  m_PrefabInstance: {fileID: 5512750334818493954}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 67db9e8f0e2ae9c40bc1e2b64352a6b4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: UnityEngine.UI::UnityEngine.UI.Slider
 --- !u!224 &913028515891026823 stripped
 RectTransform:
   m_CorrespondingSourceObject: {fileID: 4623652698271071621, guid: 8694e7bb21d5c774dbc4b5554f349cd1, type: 3}
   m_PrefabInstance: {fileID: 5512750334818493954}
   m_PrefabAsset: {fileID: 0}
+--- !u!224 &4049780862874210090 stripped
+RectTransform:
+  m_CorrespondingSourceObject: {fileID: 8408940702528923944, guid: 8694e7bb21d5c774dbc4b5554f349cd1, type: 3}
+  m_PrefabInstance: {fileID: 5512750334818493954}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &4112882721065907563 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 8472075964761510761, guid: 8694e7bb21d5c774dbc4b5554f349cd1, type: 3}
+  m_PrefabInstance: {fileID: 5512750334818493954}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: UnityEngine.UI::UnityEngine.UI.Image
 --- !u!1001 &5823364134119701884
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1111,6 +1234,40 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   animator: {fileID: 274906172934742300}
+  toggleOnColor: {r: 0.541, g: 0.835, b: 0.059, a: 1}
+  toggleOffColor: {r: 0.09411765, g: 0.34509805, b: 0.65882355, a: 1}
+  sound:
+    slider: {fileID: 834304306564938498}
+    switchButtonRect: {fileID: 4049780862874210090}
+    background: {fileID: 4112882721065907563}
+    travelDistance: 75
+    isOn: 0
+    offPosition: {x: 0, y: 0}
+    onPosition: {x: 0, y: 0}
+  music:
+    slider: {fileID: 5342027788830282803}
+    switchButtonRect: {fileID: 8756418915650101275}
+    background: {fileID: 8693459847945296474}
+    travelDistance: 75
+    isOn: 0
+    offPosition: {x: 0, y: 0}
+    onPosition: {x: 0, y: 0}
+  vibration:
+    slider: {fileID: 1671746205283045167}
+    switchButtonRect: {fileID: 2635873747729103623}
+    background: {fileID: 2717027383459234118}
+    travelDistance: 75
+    isOn: 0
+    offPosition: {x: 0, y: 0}
+    onPosition: {x: 0, y: 0}
+  notification:
+    slider: {fileID: 7812952440940180970}
+    switchButtonRect: {fileID: 6902491822881882562}
+    background: {fileID: 6839490683822848899}
+    travelDistance: 75
+    isOn: 0
+    offPosition: {x: 0, y: 0}
+    onPosition: {x: 0, y: 0}
 --- !u!224 &3193247172720222723 stripped
 RectTransform:
   m_CorrespondingSourceObject: {fileID: 8971187710638563199, guid: dc6d0589d74031d4a987127d625e61d7, type: 3}
@@ -1353,6 +1510,34 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1054499243272384877}
     m_Modifications:
+    - target: {fileID: 1090781467709317425, guid: 9f58b65cfba7bb14c89521c95db8a033, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1090781467709317425, guid: 9f58b65cfba7bb14c89521c95db8a033, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1090781467709317425, guid: 9f58b65cfba7bb14c89521c95db8a033, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 749425064285173600}
+    - target: {fileID: 1090781467709317425, guid: 9f58b65cfba7bb14c89521c95db8a033, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 1090781467709317425, guid: 9f58b65cfba7bb14c89521c95db8a033, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: OnMusicToggleClicked
+      objectReference: {fileID: 0}
+    - target: {fileID: 1090781467709317425, guid: 9f58b65cfba7bb14c89521c95db8a033, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
+      value: SettingsPopupController, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 1090781467709317425, guid: 9f58b65cfba7bb14c89521c95db8a033, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
     - target: {fileID: 1654547425071885327, guid: 9f58b65cfba7bb14c89521c95db8a033, type: 3}
       propertyPath: m_Pivot.x
       value: 0.5
@@ -1446,9 +1631,36 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 9f58b65cfba7bb14c89521c95db8a033, type: 3}
+--- !u!114 &5342027788830282803 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 1281718143599725706, guid: 9f58b65cfba7bb14c89521c95db8a033, type: 3}
+  m_PrefabInstance: {fileID: 6623425215631317177}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 67db9e8f0e2ae9c40bc1e2b64352a6b4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: UnityEngine.UI::UnityEngine.UI.Slider
 --- !u!224 &5556597763436950710 stripped
 RectTransform:
   m_CorrespondingSourceObject: {fileID: 1654547425071885327, guid: 9f58b65cfba7bb14c89521c95db8a033, type: 3}
+  m_PrefabInstance: {fileID: 6623425215631317177}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &8693459847945296474 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 2544108896402227939, guid: 9f58b65cfba7bb14c89521c95db8a033, type: 3}
+  m_PrefabInstance: {fileID: 6623425215631317177}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: UnityEngine.UI::UnityEngine.UI.Image
+--- !u!224 &8756418915650101275 stripped
+RectTransform:
+  m_CorrespondingSourceObject: {fileID: 2480971813035980962, guid: 9f58b65cfba7bb14c89521c95db8a033, type: 3}
   m_PrefabInstance: {fileID: 6623425215631317177}
   m_PrefabAsset: {fileID: 0}
 --- !u!1001 &7141703757091742317
@@ -1466,6 +1678,34 @@ PrefabInstance:
     - target: {fileID: 5154629875850353002, guid: be91ddc4e6e04954aa69ac23c2e32050, type: 3}
       propertyPath: m_AnchorMax.y
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7693830145237156089, guid: be91ddc4e6e04954aa69ac23c2e32050, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7693830145237156089, guid: be91ddc4e6e04954aa69ac23c2e32050, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7693830145237156089, guid: be91ddc4e6e04954aa69ac23c2e32050, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 749425064285173600}
+    - target: {fileID: 7693830145237156089, guid: be91ddc4e6e04954aa69ac23c2e32050, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 7693830145237156089, guid: be91ddc4e6e04954aa69ac23c2e32050, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: OnVibrationToggleClicked
+      objectReference: {fileID: 0}
+    - target: {fileID: 7693830145237156089, guid: be91ddc4e6e04954aa69ac23c2e32050, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
+      value: SettingsPopupController, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 7693830145237156089, guid: be91ddc4e6e04954aa69ac23c2e32050, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
       objectReference: {fileID: 0}
     - target: {fileID: 8291373385923644871, guid: be91ddc4e6e04954aa69ac23c2e32050, type: 3}
       propertyPath: m_Pivot.x
@@ -1557,6 +1797,33 @@ RectTransform:
   m_CorrespondingSourceObject: {fileID: 8291373385923644871, guid: be91ddc4e6e04954aa69ac23c2e32050, type: 3}
   m_PrefabInstance: {fileID: 7141703757091742317}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &1671746205283045167 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 8372000304413437250, guid: be91ddc4e6e04954aa69ac23c2e32050, type: 3}
+  m_PrefabInstance: {fileID: 7141703757091742317}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 67db9e8f0e2ae9c40bc1e2b64352a6b4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: UnityEngine.UI::UnityEngine.UI.Slider
+--- !u!224 &2635873747729103623 stripped
+RectTransform:
+  m_CorrespondingSourceObject: {fileID: 5154629875850353002, guid: be91ddc4e6e04954aa69ac23c2e32050, type: 3}
+  m_PrefabInstance: {fileID: 7141703757091742317}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &2717027383459234118 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 5091530175881831211, guid: be91ddc4e6e04954aa69ac23c2e32050, type: 3}
+  m_PrefabInstance: {fileID: 7141703757091742317}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: UnityEngine.UI::UnityEngine.UI.Image
 --- !u!1001 &7741529367774550789
 PrefabInstance:
   m_ObjectHideFlags: 0

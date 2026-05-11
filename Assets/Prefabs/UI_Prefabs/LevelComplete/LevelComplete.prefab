@@ -74,6 +74,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1162961953247126231}
   - component: {fileID: 132173240500145304}
+  - component: {fileID: 7876436924785790968}
   m_Layer: 5
   m_Name: LevelComplete
   m_TagString: Untagged
@@ -118,7 +119,7 @@ Animator:
   m_Controller: {fileID: 9100000, guid: e6578ba7b7da498409eaaf3cfebf49c4, type: 2}
   m_CullingMode: 0
   m_UpdateMode: 2
-  m_ApplyRootMotion: 0
+  m_ApplyRootMotion: 1
   m_LinearVelocityBlending: 0
   m_StabilizeFeet: 0
   m_AnimatePhysics: 0
@@ -127,6 +128,19 @@ Animator:
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
   m_WriteDefaultValuesOnDisable: 0
+--- !u!114 &7876436924785790968
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2821258284809228318}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3b3b9792b7b49bd4181e4075c4beb5e5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::LevelComplete
+  _levelCompleteAnimator: {fileID: 132173240500145304}
 --- !u!1 &5260512744269713313
 GameObject:
   m_ObjectHideFlags: 0
@@ -921,6 +935,10 @@ PrefabInstance:
       propertyPath: m_Layer
       value: 5
       objectReference: {fileID: 0}
+    - target: {fileID: 5680869180922107930, guid: e91a47979e4fa410d8c9166a5e3fd410, type: 3}
+      propertyPath: m_Material
+      value: 
+      objectReference: {fileID: 2100000, guid: d92eefe328859a84b864901406d80e56, type: 2}
     - target: {fileID: 6419833146104872603, guid: e91a47979e4fa410d8c9166a5e3fd410, type: 3}
       propertyPath: m_Layer
       value: 5

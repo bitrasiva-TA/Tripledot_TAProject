@@ -80,10 +80,14 @@ Material:
     - _FlipbookMode: 0
     - _LightingEnabled: 0
     - _Mode: 0
-    - _Number_of_Rays_A: 4
-    - _Number_of_Rays_B: 5
-    - _Rotation_Speed_A: 40
-    - _Rotation_Speed_B: 30
+    - _Normal_Rays_Count: 3
+    - _Normal_Rays_Speed: 20
+    - _Number_of_Rays_A: 6
+    - _Number_of_Rays_B: 10.77
+    - _Rotation_Speed_A: 52.25
+    - _Rotation_Speed_B: 281.9
+    - _Shiny_Rays_Count: 4
+    - _Shiny_Rays_Speed: 30
     - _SoftParticlesEnabled: 0
     - _SoftParticlesFarFadeDistance: 1
     - _SoftParticlesNearFadeDistance: 0
@@ -102,6 +106,7 @@ Material:
     - _Color: {r: 1, g: 0.8286115, b: 0, a: 1}
     - _ColorAddSubDiff: {r: 0, g: 0, b: 0, a: 0}
     - _EmissionColor: {r: 0, g: 0, b: 0, a: 1}
+    - _RaysColor: {r: 1, g: 0.9496904, b: 0.4009434, a: 0}
     - _RendererColor: {r: 1, g: 1, b: 1, a: 1}
     - _SoftParticleFadeParams: {r: 0, g: 0, b: 0, a: 0}
   m_BuildTextureStacks: []

@@ -13,8 +13,7 @@ using UnityEngine;
         //Internal
         private ButtonFooterController _buttonSelected;
         private GameObject _currentSlot;
-
-        void Start()
+        private void Start()
         {
             if (startSelected != null)
             {
@@ -25,24 +24,20 @@ using UnityEngine;
                 indicator.SetActive(false);
             }
         }
-
-        void OnEnable()
+        private void OnEnable()
         {
-            foreach (var btn in footerButtons)
+            foreach (ButtonFooterController btn in footerButtons)
             {
                 btn.OnButtonClickedEvent.AddListener(OnButtonClickedEvent);
             }
         }
-
-        void OnDisable()
+        private void OnDisable()
         {
-            foreach (var btn in footerButtons)
+            foreach (ButtonFooterController btn in footerButtons)
             {
                 btn.OnButtonClickedEvent.RemoveListener(OnButtonClickedEvent);
             }
         }
-
-
         private void OnButtonClickedEvent(
             ButtonFooterController buttonClicked)
         {
@@ -52,43 +47,33 @@ using UnityEngine;
                 {
                     _buttonSelected = null;
                     _currentSlot = null;
-
-                    foreach (var btn in footerButtons)
+                    foreach (ButtonFooterController btn in footerButtons)
                     {
                         btn.SetSelect(false);
                     }
-
                     indicator.SetActive(false);
-
                     return;
                 }
-
                 _buttonSelected = buttonClicked;
-
-                foreach (var btn in footerButtons)
+                foreach (ButtonFooterController btn in footerButtons)
                 {
                     btn.SetSelect(_buttonSelected == btn);
                 }
-
                 MoveIndicator();
             }
         }
-
         private void MoveIndicator()
         {
             if (_buttonSelected == null) return;
-
             if (_currentSlot == _buttonSelected.gameObject) return;
-
             _currentSlot = _buttonSelected.gameObject;
-
             indicator.SetActive(true);
             indicator.transform.DOKill();
-            indicator.transform.DOMoveX(_currentSlot.transform.position.x, .25f).SetEase(Ease.OutSine).OnComplete(() =>
+            indicator.transform.DOMoveX(_currentSlot.transform.position.x, .3f).SetEase(Ease.OutCubic).OnComplete(() =>
             {
                 indicator.transform.position = new Vector3(_currentSlot.transform.position.x,
-                                                            indicator.transform.position.y,
-                                                            indicator.transform.position.z);
+                indicator.transform.position.y,
+                indicator.transform.position.z);
             });
         }
     }

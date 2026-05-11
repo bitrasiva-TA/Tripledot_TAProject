@@ -94,14 +94,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8396576624844702210, guid: 999a922ece1f67647899098b7d0c2b38, type: 3}
       propertyPath: m_Name
-      value: Settings_ToggleControl_Notification Variant
+      value: Settings_ToggleControl_Notification
       objectReference: {fileID: 0}
     - target: {fileID: 8467260160406562873, guid: 999a922ece1f67647899098b7d0c2b38, type: 3}
       propertyPath: m_text
       value: Notifications
       objectReference: {fileID: 0}
     m_RemovedComponents: []
-    m_RemovedGameObjects: []
+    m_RemovedGameObjects:
+    - {fileID: 502008691029571064, guid: 999a922ece1f67647899098b7d0c2b38, type: 3}
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 999a922ece1f67647899098b7d0c2b38, type: 3}

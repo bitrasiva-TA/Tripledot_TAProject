@@ -498,22 +498,6 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 4425404226422257577}
     m_Modifications:
-    - target: {fileID: 132173240500145304, guid: af3328386dceb854f93e15b57a3ba18d, type: 3}
-      propertyPath: m_ApplyRootMotion
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 288838884546581998, guid: af3328386dceb854f93e15b57a3ba18d, type: 3}
-      propertyPath: m_Enabled
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 682162422236837687, guid: af3328386dceb854f93e15b57a3ba18d, type: 3}
-      propertyPath: m_IsActive
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 1073751609790794345, guid: af3328386dceb854f93e15b57a3ba18d, type: 3}
-      propertyPath: m_fontColor32.rgba
-      value: 4294967295
-      objectReference: {fileID: 0}
     - target: {fileID: 1162961953247126231, guid: af3328386dceb854f93e15b57a3ba18d, type: 3}
       propertyPath: m_Pivot.x
       value: 0.5
@@ -594,22 +578,6 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 1176607837014879191, guid: af3328386dceb854f93e15b57a3ba18d, type: 3}
-      propertyPath: m_LocalPosition.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 1699100229835564931, guid: af3328386dceb854f93e15b57a3ba18d, type: 3}
-      propertyPath: m_IsActive
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 1964727355538743270, guid: af3328386dceb854f93e15b57a3ba18d, type: 3}
-      propertyPath: m_Material
-      value: 
-      objectReference: {fileID: 2100000, guid: d92eefe328859a84b864901406d80e56, type: 2}
-    - target: {fileID: 2724877819488944500, guid: af3328386dceb854f93e15b57a3ba18d, type: 3}
-      propertyPath: m_IsActive
-      value: 1
-      objectReference: {fileID: 0}
     - target: {fileID: 2821258284809228318, guid: af3328386dceb854f93e15b57a3ba18d, type: 3}
       propertyPath: m_Name
       value: LevelComplete
@@ -634,18 +602,6 @@ PrefabInstance:
       propertyPath: m_AnchoredPosition.y
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 5026229048166793681, guid: af3328386dceb854f93e15b57a3ba18d, type: 3}
-      propertyPath: m_IsActive
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 5409072851039854593, guid: af3328386dceb854f93e15b57a3ba18d, type: 3}
-      propertyPath: m_fontSize
-      value: 150.9
-      objectReference: {fileID: 0}
-    - target: {fileID: 5602217492830744141, guid: af3328386dceb854f93e15b57a3ba18d, type: 3}
-      propertyPath: m_IsActive
-      value: 1
-      objectReference: {fileID: 0}
     - target: {fileID: 6346542286980707470, guid: af3328386dceb854f93e15b57a3ba18d, type: 3}
       propertyPath: m_AnchorMax.y
       value: 0
@@ -678,13 +634,9 @@ PrefabInstance:
       propertyPath: m_AnchoredPosition.y
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 7584530572225893267, guid: af3328386dceb854f93e15b57a3ba18d, type: 3}
-      propertyPath: m_IsActive
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 7810502505359443026, guid: af3328386dceb854f93e15b57a3ba18d, type: 3}
-      propertyPath: m_AdditionalShaderChannelsFlag
-      value: 25
+    - target: {fileID: 7876436924785790968, guid: af3328386dceb854f93e15b57a3ba18d, type: 3}
+      propertyPath: _delayBeforeAnimation
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8357350744766365344, guid: af3328386dceb854f93e15b57a3ba18d, type: 3}
       propertyPath: m_AnchorMax.y
@@ -701,22 +653,6 @@ PrefabInstance:
     - target: {fileID: 8357350744766365344, guid: af3328386dceb854f93e15b57a3ba18d, type: 3}
       propertyPath: m_AnchoredPosition.y
       value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 8487928313768899296, guid: af3328386dceb854f93e15b57a3ba18d, type: 3}
-      propertyPath: m_IsActive
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 8571160749190304392, guid: af3328386dceb854f93e15b57a3ba18d, type: 3}
-      propertyPath: EmissionModule.enabled
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 8571626864071322264, guid: af3328386dceb854f93e15b57a3ba18d, type: 3}
-      propertyPath: m_IsActive
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 9201664407564025770, guid: af3328386dceb854f93e15b57a3ba18d, type: 3}
-      propertyPath: m_AdditionalShaderChannelsFlag
-      value: 25
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []

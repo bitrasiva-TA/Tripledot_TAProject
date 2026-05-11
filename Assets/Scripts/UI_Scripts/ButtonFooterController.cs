@@ -17,13 +17,12 @@ using UnityEngine.UI;
         //Internal
         private bool _selected;
         private bool _locked;
-
-        void Awake()
+        private void Awake()
         {
             SetLock(lockOnAwake);
         }
 
-        void Start()
+        private void Start()
         {
             footerBtn.onClick.AddListener(() =>
             {
@@ -31,8 +30,7 @@ using UnityEngine.UI;
             });
         }
 
-        public void SetLock(
-            bool locked)
+        public void SetLock(bool locked)
         {
             _locked = locked;
 
@@ -41,8 +39,7 @@ using UnityEngine.UI;
             animator.SetBool("Locked", _locked);
         }
 
-        public void SetSelect(
-            bool selected)
+        public void SetSelect(bool selected)
         {
             _selected = selected;
 

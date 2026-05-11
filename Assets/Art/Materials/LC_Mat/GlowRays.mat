@@ -80,13 +80,13 @@ Material:
     - _FlipbookMode: 0
     - _LightingEnabled: 0
     - _Mode: 0
-    - _Normal_Rays_Count: 3
+    - _Normal_Rays_Count: 5
     - _Normal_Rays_Speed: 20
     - _Number_of_Rays_A: 6
     - _Number_of_Rays_B: 10.77
     - _Rotation_Speed_A: 52.25
     - _Rotation_Speed_B: 281.9
-    - _Shiny_Rays_Count: 4
+    - _Shiny_Rays_Count: 6
     - _Shiny_Rays_Speed: 30
     - _SoftParticlesEnabled: 0
     - _SoftParticlesFarFadeDistance: 1

@@ -12,9 +12,13 @@ PrefabInstance:
       propertyPath: m_Sprite
       value: 
       objectReference: {fileID: 21300000, guid: 0240eff98fbd0c4478932e8feb97db30, type: 3}
+    - target: {fileID: 1044707429816575082, guid: 064dcbe6423188441bf54f374a0d0abd, type: 3}
+      propertyPath: m_Material
+      value: 
+      objectReference: {fileID: 2100000, guid: d92eefe328859a84b864901406d80e56, type: 2}
     - target: {fileID: 2502458146934017350, guid: 064dcbe6423188441bf54f374a0d0abd, type: 3}
       propertyPath: m_Name
-      value: RewardElement_Crowns Variant
+      value: RewardElement_Crowns
       objectReference: {fileID: 0}
     - target: {fileID: 4046485512237339287, guid: 064dcbe6423188441bf54f374a0d0abd, type: 3}
       propertyPath: m_Pivot.x

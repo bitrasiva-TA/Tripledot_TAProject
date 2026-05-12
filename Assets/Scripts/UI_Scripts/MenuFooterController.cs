@@ -3,77 +3,73 @@ using DG.Tweening;
 using UnityEngine;
 
 
-    public class MenuFooterController : MonoBehaviour
-    {
-        [Header("Components")]
-        [SerializeField] private GameObject indicator;
-        [SerializeField] private ButtonFooterController startSelected;
-        [SerializeField] private List<ButtonFooterController> footerButtons;
+public class MenuFooterController : MonoBehaviour
+{
+    [Header("Components")]
+    [SerializeField] private GameObject indicator;
+    [SerializeField] private ButtonFooterController startSelected;
+    [SerializeField] private List<ButtonFooterController> footerButtons;
 
-        //Internal
-        private ButtonFooterController buttonSelected;
-        private GameObject currentSlot;
-        private void Start()
+    private ButtonFooterController buttonSelected;
+    private GameObject currentSlot;
+    private void Start()
+    {
+        if (startSelected != null)
         {
-            if (startSelected != null)
-            {
-                OnButtonClickedEvent(startSelected);
-            }
-            else
-            {
-                indicator.SetActive(false);
-            }
+            OnButtonClickedEvent(startSelected);
         }
-        private void OnEnable()
+        else
         {
-            foreach (ButtonFooterController btn in footerButtons)
-            {
-                btn.OnButtonClickedEvent.AddListener(OnButtonClickedEvent);
-            }
-        }
-        private void OnDisable()
-        {
-            foreach (ButtonFooterController btn in footerButtons)
-            {
-                btn.OnButtonClickedEvent.RemoveListener(OnButtonClickedEvent);
-            }
-        }
-        private void OnButtonClickedEvent(
-            ButtonFooterController buttonClicked)
-        {
-            if (footerButtons.Contains(buttonClicked))
-            {
-                if (buttonSelected == buttonClicked)
-                {
-                    buttonSelected = null;
-                    currentSlot = null;
-                    foreach (ButtonFooterController btn in footerButtons)
-                    {
-                        btn.SetSelect(false);
-                    }
-                    indicator.SetActive(false);
-                    return;
-                }
-                buttonSelected = buttonClicked;
-                foreach (ButtonFooterController btn in footerButtons)
-                {
-                    btn.SetSelect(buttonSelected == btn);
-                }
-                MoveIndicator();
-            }
-        }
-        private void MoveIndicator()
-        {
-            if (buttonSelected == null) return;
-            if (currentSlot == buttonSelected.gameObject) return;
-            currentSlot = buttonSelected.gameObject;
-            indicator.SetActive(true);
-            indicator.transform.DOKill();
-            indicator.transform.DOMoveX(currentSlot.transform.position.x, .3f).SetEase(Ease.OutCubic).OnComplete(() =>
-            {
-                indicator.transform.position = new Vector3(currentSlot.transform.position.x,
-                indicator.transform.position.y,
-                indicator.transform.position.z);
-            });
+            indicator.SetActive(false);
         }
     }
+    private void OnEnable()
+    {
+        foreach (ButtonFooterController btn in footerButtons)
+        {
+            btn.OnButtonClickedEvent.AddListener(OnButtonClickedEvent);
+        }
+    }
+    private void OnDisable()
+    {
+        foreach (ButtonFooterController btn in footerButtons)
+        {
+            btn.OnButtonClickedEvent.RemoveListener(OnButtonClickedEvent);
+        }
+    }
+    private void OnButtonClickedEvent(
+    ButtonFooterController buttonClicked)
+    {
+        if (footerButtons.Contains(buttonClicked))
+        {
+            if (buttonSelected == buttonClicked)
+            {
+                buttonSelected = null;
+                currentSlot = null;
+                foreach (ButtonFooterController btn in footerButtons)
+                {
+                    btn.SetSelect(false);
+                }
+                indicator.SetActive(false);
+                return;
+            }
+            buttonSelected = buttonClicked;
+            foreach (ButtonFooterController btn in footerButtons)
+            {
+                btn.SetSelect(buttonSelected == btn);
+            }
+            MoveIndicator();
+        }
+    }
+    private void MoveIndicator()
+    {
+        if (buttonSelected == null) return;
+        if (currentSlot == buttonSelected.gameObject) return;
+        currentSlot = buttonSelected.gameObject;
+        indicator.SetActive(true); indicator.transform.DOKill();
+        indicator.transform.DOMoveX(currentSlot.transform.position.x, .3f).SetEase(Ease.OutCubic).OnComplete(() =>
+        {
+            indicator.transform.position = new Vector3(currentSlot.transform.position.x, indicator.transform.position.y, indicator.transform.position.z);
+        });
+    }
+}

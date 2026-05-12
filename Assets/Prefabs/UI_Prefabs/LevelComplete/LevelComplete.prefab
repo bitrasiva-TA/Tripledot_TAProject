@@ -140,8 +140,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3b3b9792b7b49bd4181e4075c4beb5e5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::LevelComplete
-  delayBeforeAnimation: 0
-  levelCompleteAnimator: {fileID: 132173240500145304}
+  _delayBeforeAnimation: 0.1
+  _levelCompleteAnimator: {fileID: 132173240500145304}
 --- !u!1 &5260512744269713313
 GameObject:
   m_ObjectHideFlags: 0

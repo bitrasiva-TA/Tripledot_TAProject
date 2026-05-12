@@ -15,19 +15,27 @@ public class ToggleControl
     [HideInInspector] public Vector2 onPosition;
     [HideInInspector] public Coroutine routine;
 }
+
 public class SettingsPopupController : MonoBehaviour
 {
     private const float TOGGLE_ANIMATION_DURATION = 0.25f;
+
+    private const string SOUND_PREF_KEY = "SoundEnabled";
+    private const string MUSIC_PREF_KEY = "MusicEnabled";
+    private const string VIBRATION_PREF_KEY = "VibrationEnabled";
+    private const string NOTIFICATION_PREF_KEY = "NotificationEnabled";
+
     [SerializeField] private Animator animator;
+
     [Header("Toggle Colors")]
     [SerializeField] private Color toggleOnColor = new Color(0.541f, 0.835f, 0.059f, 1f);
-    [SerializeField] private Color toggleOffColor = new Color(0.75f,  0.75f,  0.75f,  1f);
-
+    [SerializeField] private Color toggleOffColor = new Color(0.75f, 0.75f, 0.75f, 1f);
     [Header("Toggles")]
     [SerializeField] private ToggleControl sound;
     [SerializeField] private ToggleControl music;
     [SerializeField] private ToggleControl vibration;
     [SerializeField] private ToggleControl notification;
+
     private void Awake()
     {
         DisableSlider(sound.slider);
@@ -35,9 +43,10 @@ public class SettingsPopupController : MonoBehaviour
         DisableSlider(vibration.slider);
         DisableSlider(notification.slider);
     }
+
     private void Start()
     {
-        StartCoroutine(CacheAllPositions());
+        StartCoroutine(InitializeToggles());
     }
     private void DisableSlider(Slider slider)
     {
@@ -45,21 +54,37 @@ public class SettingsPopupController : MonoBehaviour
         slider.interactable = false;
         Animator sliderAnimator = slider.GetComponent<Animator>();
         if (sliderAnimator != null)
+        {
             sliderAnimator.enabled = false;
+        }
     }
-    private IEnumerator CacheAllPositions()
+    private IEnumerator InitializeToggles()
     {
         yield return null;
         CacheTogglePosition(sound);
         CacheTogglePosition(music);
         CacheTogglePosition(vibration);
         CacheTogglePosition(notification);
+        LoadToggleStates();
     }
+
     private void CacheTogglePosition(ToggleControl toggle)
     {
         toggle.offPosition = toggle.switchButtonRect.anchoredPosition;
         toggle.onPosition = toggle.offPosition + new Vector2(toggle.travelDistance, 0f);
-        toggle.background.color = toggleOffColor;
+    }
+    private void LoadToggleStates()
+    {
+        SetToggleState(sound,PlayerPrefs.GetInt(SOUND_PREF_KEY, 1) == 1);
+        SetToggleState(music,PlayerPrefs.GetInt(MUSIC_PREF_KEY, 1) == 1);
+        SetToggleState(vibration,PlayerPrefs.GetInt(VIBRATION_PREF_KEY, 1) == 1);
+        SetToggleState(notification,PlayerPrefs.GetInt(NOTIFICATION_PREF_KEY, 1) == 1);
+    }
+    private void SetToggleState(ToggleControl toggle, bool isOn)
+    {
+        toggle.isOn = isOn;
+        toggle.switchButtonRect.anchoredPosition = isOn ? toggle.onPosition : toggle.offPosition;
+        toggle.background.color = isOn ? toggleOnColor : toggleOffColor;
     }
     public void OnCloseButtonClicked()
     {
@@ -69,13 +94,25 @@ public class SettingsPopupController : MonoBehaviour
     {
         gameObject.SetActive(false);
     }
-    public void OnSoundToggleClicked() => ClickToggle(sound);
-    public void OnMusicToggleClicked() => ClickToggle(music);
-    public void OnVibrationToggleClicked() => ClickToggle(vibration);
-    public void OnNotificationToggleClicked() => ClickToggle(notification);
-    private void ClickToggle(ToggleControl toggle)
+    public void OnSoundToggleClicked()
     {
-        toggle.isOn = !toggle.isOn;
+        ClickToggle(sound, SOUND_PREF_KEY);
+    }
+    public void OnMusicToggleClicked()
+    {
+        ClickToggle(music, MUSIC_PREF_KEY);
+    }
+    public void OnVibrationToggleClicked()
+    {
+        ClickToggle(vibration, VIBRATION_PREF_KEY);
+    }
+    public void OnNotificationToggleClicked()
+    {
+        ClickToggle(notification, NOTIFICATION_PREF_KEY);
+    }
+    private void ClickToggle(ToggleControl toggle, string prefKey)
+    {
+        toggle.isOn = !toggle.isOn; PlayerPrefs.SetInt(prefKey, toggle.isOn ? 1 : 0); PlayerPrefs.Save();
         if (toggle.routine != null)
         {
             StopCoroutine(toggle.routine);
@@ -98,6 +135,7 @@ public class SettingsPopupController : MonoBehaviour
             toggle.background.color = Color.Lerp(startColor, targetColor, t);
             yield return null;
         }
+
         toggle.switchButtonRect.anchoredPosition = targetPos;
         toggle.background.color = targetColor;
         toggle.routine = null;

@@ -15,8 +15,8 @@ using UnityEngine.UI;
         public UnityEvent<ButtonFooterController> OnButtonClickedEvent;
 
         //Internal
-        private bool _selected;
-        private bool _locked;
+        private bool selected;
+        private bool locked;
         private void Awake()
         {
             SetLock(lockOnAwake);
@@ -32,18 +32,18 @@ using UnityEngine.UI;
 
         public void SetLock(bool locked)
         {
-            _locked = locked;
+            locked = locked;
 
-            footerBtn.interactable = _locked == false;
+            footerBtn.interactable = locked == false;
 
-            animator.SetBool("Locked", _locked);
+            animator.SetBool("Locked", locked);
         }
 
         public void SetSelect(bool selected)
         {
-            _selected = selected;
+            selected = selected;
 
-            animator.SetBool("Selected", _selected);
+            animator.SetBool("Selected", selected);
         }
     }
 

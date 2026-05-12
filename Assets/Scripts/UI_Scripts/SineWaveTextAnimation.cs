@@ -21,7 +21,6 @@ public class SineWaveTextAnimation : MonoBehaviour
     }
     private void AnimateText()
     {
-        // Get the updated mesh and vertices
         textMesh.ForceMeshUpdate();
         var mesh = textMesh.mesh;
         var vertices = mesh.vertices;
@@ -31,7 +30,6 @@ public class SineWaveTextAnimation : MonoBehaviour
             float wave = Mathf.Sin(Time.time * frequency + charIndex * waveOffset);
             vertices[i].y = originalVertices[i].y + wave * amplitude;
         }
-        // Apply the modified vertices back to the mesh
         mesh.vertices = vertices;
         textMesh.canvasRenderer.SetMesh(mesh);
     }

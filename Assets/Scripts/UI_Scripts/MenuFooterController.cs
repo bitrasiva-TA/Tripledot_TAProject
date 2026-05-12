@@ -11,8 +11,8 @@ using UnityEngine;
         [SerializeField] private List<ButtonFooterController> footerButtons;
 
         //Internal
-        private ButtonFooterController _buttonSelected;
-        private GameObject _currentSlot;
+        private ButtonFooterController buttonSelected;
+        private GameObject currentSlot;
         private void Start()
         {
             if (startSelected != null)
@@ -43,10 +43,10 @@ using UnityEngine;
         {
             if (footerButtons.Contains(buttonClicked))
             {
-                if (_buttonSelected == buttonClicked)
+                if (buttonSelected == buttonClicked)
                 {
-                    _buttonSelected = null;
-                    _currentSlot = null;
+                    buttonSelected = null;
+                    currentSlot = null;
                     foreach (ButtonFooterController btn in footerButtons)
                     {
                         btn.SetSelect(false);
@@ -54,24 +54,24 @@ using UnityEngine;
                     indicator.SetActive(false);
                     return;
                 }
-                _buttonSelected = buttonClicked;
+                buttonSelected = buttonClicked;
                 foreach (ButtonFooterController btn in footerButtons)
                 {
-                    btn.SetSelect(_buttonSelected == btn);
+                    btn.SetSelect(buttonSelected == btn);
                 }
                 MoveIndicator();
             }
         }
         private void MoveIndicator()
         {
-            if (_buttonSelected == null) return;
-            if (_currentSlot == _buttonSelected.gameObject) return;
-            _currentSlot = _buttonSelected.gameObject;
+            if (buttonSelected == null) return;
+            if (currentSlot == buttonSelected.gameObject) return;
+            currentSlot = buttonSelected.gameObject;
             indicator.SetActive(true);
             indicator.transform.DOKill();
-            indicator.transform.DOMoveX(_currentSlot.transform.position.x, .3f).SetEase(Ease.OutCubic).OnComplete(() =>
+            indicator.transform.DOMoveX(currentSlot.transform.position.x, .3f).SetEase(Ease.OutCubic).OnComplete(() =>
             {
-                indicator.transform.position = new Vector3(_currentSlot.transform.position.x,
+                indicator.transform.position = new Vector3(currentSlot.transform.position.x,
                 indicator.transform.position.y,
                 indicator.transform.position.z);
             });

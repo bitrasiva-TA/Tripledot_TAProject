@@ -2,7 +2,6 @@ using System.Collections.Generic;
 using DG.Tweening;
 using UnityEngine;
 
-
 public class MenuFooterController : MonoBehaviour
 {
     private const float Duration = .3f;
@@ -38,8 +37,7 @@ public class MenuFooterController : MonoBehaviour
             btn.OnButtonClickedEvent.RemoveListener(OnButtonClickedEvent);
         }
     }
-    private void OnButtonClickedEvent(
-    ButtonFooterController buttonClicked)
+    private void OnButtonClickedEvent(ButtonFooterController buttonClicked)
     {
         if (footerButtons.Contains(buttonClicked))
         {
@@ -47,30 +45,47 @@ public class MenuFooterController : MonoBehaviour
             {
                 selectedButton = null;
                 currentSelectedObject = null;
-                foreach (ButtonFooterController btn in footerButtons)
-                {
-                    btn.SetSelect(false);
-                }
+
+                UpdateSelectionVisuals();
+
                 indicator.SetActive(false);
                 return;
             }
+
             selectedButton = buttonClicked;
-            foreach (ButtonFooterController btn in footerButtons)
-            {
-                btn.SetSelect(selectedButton == btn);
-            }
+
+            UpdateSelectionVisuals();
+
             MoveIndicator();
+        }
+    }
+
+    private void UpdateSelectionVisuals()
+    {
+        foreach (ButtonFooterController btn in footerButtons)
+        {
+            btn.SetSelect(selectedButton == btn);
         }
     }
     private void MoveIndicator()
     {
         if (selectedButton == null) return;
         if (currentSelectedObject == selectedButton.gameObject) return;
+
         currentSelectedObject = selectedButton.gameObject;
-        indicator.SetActive(true); indicator.transform.DOKill();
-        indicator.transform.DOMoveX(currentSelectedObject.transform.position.x, Duration).SetEase(Ease.OutCubic).OnComplete(() =>
-        {
-            indicator.transform.position = new Vector3(currentSelectedObject.transform.position.x, indicator.transform.position.y, indicator.transform.position.z);
-        });
+
+        indicator.SetActive(true);
+        indicator.transform.DOKill();
+
+        indicator.transform
+            .DOMoveX(currentSelectedObject.transform.position.x, Duration)
+            .SetEase(Ease.OutCubic)
+            .OnComplete(() =>
+            {
+                indicator.transform.position = new Vector3(
+                    currentSelectedObject.transform.position.x,
+                    indicator.transform.position.y,
+                    indicator.transform.position.z);
+            });
     }
 }

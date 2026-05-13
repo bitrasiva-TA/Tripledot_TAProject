@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class MenuFooterController : MonoBehaviour
 {
-    private const float Duration = .3f;
+    [SerializeField] private float indicatorMoveDuration = 0.3f;
     [Header("Components")]
     [SerializeField] private GameObject indicator;
     [SerializeField] private ButtonFooterController startSelected;
@@ -78,7 +78,7 @@ public class MenuFooterController : MonoBehaviour
         indicator.transform.DOKill();
 
         indicator.transform
-            .DOMoveX(currentSelectedObject.transform.position.x, Duration)
+            .DOMoveX(currentSelectedObject.transform.position.x, indicatorMoveDuration)
             .SetEase(Ease.OutCubic)
             .OnComplete(() =>
             {

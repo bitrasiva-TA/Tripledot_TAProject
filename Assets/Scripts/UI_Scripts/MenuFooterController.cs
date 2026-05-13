@@ -5,13 +5,14 @@ using UnityEngine;
 
 public class MenuFooterController : MonoBehaviour
 {
+    private const float Duration = .3f;
     [Header("Components")]
     [SerializeField] private GameObject indicator;
     [SerializeField] private ButtonFooterController startSelected;
     [SerializeField] private List<ButtonFooterController> footerButtons;
 
-    private ButtonFooterController buttonSelected;
-    private GameObject currentSlot;
+    private ButtonFooterController selectedButton;
+    private GameObject currentSelectedObject;
     private void Start()
     {
         if (startSelected != null)
@@ -42,10 +43,10 @@ public class MenuFooterController : MonoBehaviour
     {
         if (footerButtons.Contains(buttonClicked))
         {
-            if (buttonSelected == buttonClicked)
+            if (selectedButton == buttonClicked)
             {
-                buttonSelected = null;
-                currentSlot = null;
+                selectedButton = null;
+                currentSelectedObject = null;
                 foreach (ButtonFooterController btn in footerButtons)
                 {
                     btn.SetSelect(false);
@@ -53,23 +54,23 @@ public class MenuFooterController : MonoBehaviour
                 indicator.SetActive(false);
                 return;
             }
-            buttonSelected = buttonClicked;
+            selectedButton = buttonClicked;
             foreach (ButtonFooterController btn in footerButtons)
             {
-                btn.SetSelect(buttonSelected == btn);
+                btn.SetSelect(selectedButton == btn);
             }
             MoveIndicator();
         }
     }
     private void MoveIndicator()
     {
-        if (buttonSelected == null) return;
-        if (currentSlot == buttonSelected.gameObject) return;
-        currentSlot = buttonSelected.gameObject;
+        if (selectedButton == null) return;
+        if (currentSelectedObject == selectedButton.gameObject) return;
+        currentSelectedObject = selectedButton.gameObject;
         indicator.SetActive(true); indicator.transform.DOKill();
-        indicator.transform.DOMoveX(currentSlot.transform.position.x, .3f).SetEase(Ease.OutCubic).OnComplete(() =>
+        indicator.transform.DOMoveX(currentSelectedObject.transform.position.x, Duration).SetEase(Ease.OutCubic).OnComplete(() =>
         {
-            indicator.transform.position = new Vector3(currentSlot.transform.position.x, indicator.transform.position.y, indicator.transform.position.z);
+            indicator.transform.position = new Vector3(currentSelectedObject.transform.position.x, indicator.transform.position.y, indicator.transform.position.z);
         });
     }
 }

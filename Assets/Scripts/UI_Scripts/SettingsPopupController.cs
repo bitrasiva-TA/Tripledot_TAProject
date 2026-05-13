@@ -5,7 +5,6 @@ using UnityEngine.UI;
 [System.Serializable]
 public class ToggleControl
 {
-    public Slider slider;
     public RectTransform switchButtonRect;
     public Image background;
     public float travelDistance = 50f;
@@ -36,27 +35,9 @@ public class SettingsPopupController : MonoBehaviour
     [SerializeField] private ToggleControl vibration;
     [SerializeField] private ToggleControl notification;
 
-    private void Awake()
-    {
-        DisableSlider(sound.slider);
-        DisableSlider(music.slider);
-        DisableSlider(vibration.slider);
-        DisableSlider(notification.slider);
-    }
-
     private void Start()
     {
         StartCoroutine(InitializeToggles());
-    }
-    private void DisableSlider(Slider slider)
-    {
-        if (slider == null) return;
-        slider.interactable = false;
-        Animator sliderAnimator = slider.GetComponent<Animator>();
-        if (sliderAnimator != null)
-        {
-            sliderAnimator.enabled = false;
-        }
     }
     private IEnumerator InitializeToggles()
     {

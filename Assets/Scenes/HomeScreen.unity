@@ -1560,9 +1560,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 71a8267643ab0344eb61ece48ef2ea3a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  ConformX: 0
-  ConformY: 1
-  Logging: 0
+  simulationDevice: 0
+  conformX: 1
+  conformY: 1
+  enableLogging: 0
 --- !u!114 &2432472842559646673
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1691,7 +1692,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2eeddb9efed1b00488ec2ab1d5f9cf3f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  scaler: {fileID: 3563940308600650189}
+  canvasScaler: {fileID: 3563940308600650189}
 --- !u!223 &5831866636927488460
 Canvas:
   m_ObjectHideFlags: 0

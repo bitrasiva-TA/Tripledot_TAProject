@@ -926,7 +926,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2eeddb9efed1b00488ec2ab1d5f9cf3f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  scaler: {fileID: 6820623578100348003}
+  canvasScaler: {fileID: 6820623578100348003}
 --- !u!1 &6749039755915204374
 GameObject:
   m_ObjectHideFlags: 0
@@ -982,9 +982,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 71a8267643ab0344eb61ece48ef2ea3a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  ConformX: 0
-  ConformY: 1
-  Logging: 0
+  simulationDevice: 0
+  conformX: 1
+  conformY: 1
+  enableLogging: 0
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0
